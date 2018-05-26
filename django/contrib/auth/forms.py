@@ -20,7 +20,7 @@ from django.utils.text import capfirst
 from django.utils.translation import ugettext, ugettext_lazy as _
 
 UserModel = get_user_model()
-
+User = UserModel
 
 class ReadOnlyPasswordHashWidget(forms.Widget):
     template_name = 'auth/widgets/read_only_password_hash.html'
